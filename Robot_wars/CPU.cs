@@ -30,12 +30,12 @@ namespace Robot_wars
                     return new Repeaterbot();
             }
         }
-        public void set_war_cry()
+        public void random_war_cry()
         {
             List<string> cry_list = new List<string> { "I'm oiled up and ready for a rumble!!!",
                 "Machine Learning will destroy you!","Robo rumbles always end in metal shards!","I want to eat your circuitry!" };
             Random index_maker = new Random();
-            int index = index_maker.Next(0, 3);
+            int index = index_maker.Next(0, 4);
             war_cry = Convert.ToString(cry_list[index]);
         }
         public void set_random_attributes()
@@ -49,7 +49,7 @@ namespace Robot_wars
         {
             Console.WriteLine("CPU is choosing a new weapon.");
             Random number_maker = new Random();
-            int weaponizer = number_maker.Next(1, 3);
+            int weaponizer = number_maker.Next(1, 5);
             switch (weaponizer)
             {
                 case 1:
@@ -61,16 +61,18 @@ namespace Robot_wars
                 case 3:
                     weapon = "torkette";
                     break;
+                case 4:
+                    weapon = "circuit breaker";
+                    break;
+                case 5:
+                    weapon = "hydro-bomb";
+                    break;
                 default:
                     weapon = "metal shank";
                     break;
-
             }
-            set_war_cry();
+            random_war_cry();
         }
-        public void subtract_hitpoints()
-        {
-            hit_points -= 10;
-        }
+       
     }
 }

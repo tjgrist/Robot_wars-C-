@@ -13,20 +13,6 @@ namespace Robot_wars
         {
             name = "MOTORCADE";
         }
-        public void show_war_cry()
-        {
-            Console.WriteLine("Speedbot says: " + war_cry);
-        }
-        public void subtract_hitpoints()
-        {
-            hit_points -= 10;
-        }
-
-
-
-
-
-
 
     }
 }
