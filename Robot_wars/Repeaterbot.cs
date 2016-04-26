@@ -13,4 +13,8 @@ namespace Robot_wars
             name = "MACHINAroboMACHINArobo";
         }
     }
+    public void subtract_hitpoints()
+    {
+        hit_points -= 10;
+    }
 }

@@ -11,16 +11,17 @@ namespace Robot_wars
         static void Main(string[] args)
         {
             Robot robots = new Robot();
+            CPU cpu = new CPU();
 
             var your_bot = robots.choose_bot();
             your_bot.set_attributes();
             your_bot.print_attributes();
 
-            var cpu_bot = robots.get_cpu_bot();
-            cpu_bot.set_random_attributes();
-            cpu_bot.print_attributes();
+            var cpu_bot = cpu.get_cpu_bot();
+            cpu.set_random_attributes();
+            cpu.print_attributes();
 
-            robots.loop_battle(your_bot, cpu_bot);
+            robots.loop_battle(your_bot, cpu);
             
             Console.ReadKey();
         }

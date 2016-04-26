@@ -17,12 +17,16 @@ namespace Robot_wars
         {
             Console.WriteLine("Speedbot says: " + war_cry);
         }
+        public void subtract_hitpoints()
+        {
+            hit_points -= 10;
+        }
 
-        
 
-        
-         
-            
-            
+
+
+
+
+
     }
 }

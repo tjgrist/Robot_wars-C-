@@ -20,5 +20,9 @@ namespace Robot_wars
         {   war_cry = "YAAA BATTLEBOT RULES!";
             Console.WriteLine("Battlebot says: "+ war_cry);
         }
+        public void subtract_hitpoints()
+        {
+            hit_points -= 10;
+        }
     }
 }
